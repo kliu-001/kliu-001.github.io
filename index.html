@@ -1,27 +1,178 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<title> KJL photography </title>
-<style>
-  h1 {color:white; font-family: Lucida Console;}
-  h2 {color: white; font-family: Lucida Console;}
-  p {color: white; font-size: 18px;}
-  body {background:#800000;}
-  button {background-color: white; color: #800000; text-align: center; cursor: pointer; border-color: black; font: Verdana; display: inline-block; font-size: 16px; border-radius: 8px; transition-duration: 0.4s;}
-    button:hover {background-color: #04AA6D; color: white;}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Photography Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-</style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      line-height: 1.6;
+      background-color: #aad7e6;
+      color: white;
+    }
+
+    header {
+      height: 30vh;
+      font-size: 3em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    nav {
+      background: #dc9c70;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .about {
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+      flex-direction: column; 
+      text-align: center;
+      min-height: 50vh;        
+      margin-bottom: 6rem;
+    }
+
+    .about-content {
+      max-width: 700px;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      width: max-content;
+      margin: 0 auto;
+      padding: 12px 24px;
+      font-size: 18px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ff9800;
+    }
+
+h3 {
+      height: 15vh;
+      font-size: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #444;
+    }
+
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-bottom: 4rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    }
+
+    html {
+      scroll-behavior: smooth; /* smooth scrolling for nav links */
+    }
+  </style>
 </head>
-
 <body>
 
-<h1> </h1>
+  <header>
+    <h1>KJL Photography</h1>
+  </header>
 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Collections</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<button> explore more </button>
+  <div class="container">
+
+    <section id="about" class="about">
+      <div class="about-content">
+        <h2> <em>photographing moments</em></h2>
+        <p>Hello! I'm a passionate traveler and photographer who loves capturing moments around the world. From bustling cities to serene landscapes, I aim to tell stories through my lens and share the beauty of cultures and places I've explored.</p>
+        <a href="https://www.example.com" class="btn" target="_blank" rel="noopener">Learn More</a>
+      </div>
+<h3><em>the works</em></h3>
+        <p>"Photographing memories and moments in life with character." Browse a selection of nature, flowers, and landscapes below. Through every patch of color, each photograph holds deep, personal meaning. </p>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <img src="C:\Users\wayne\Pictures\photo.jpg.jpg" alt="Photo 1">
+      <img src="C:\Users\wayne\Pictures\Screenshots\Screenshot 2024-08-19 210618.png" alt="Photo 2">
+      <img src="C:\Users\wayne\Pictures\Screenshots\Screenshot 2024-08-19 210703.png" alt="Photo 3">
+<img src="C:\Users\wayne\Pictures\Screenshots\Screenshot 2024-04-10 220557.png" alt="Photo 4">
+      <img src="C:\Users\wayne\Pictures\Screenshots\Screenshot 2024-04-10 220528.png" alt="Photo 5">
+      <img src="C:\Users\wayne\Pictures\Screenshots\Screenshot 2024-04-07 171930.png" alt="Photo 6">
+ <img src="C:\Users\wayne\Pictures\Screenshots\Screenshot 2024-08-19 210455.png" alt="Photo 7">
+      <img src="C:\Users\wayne\Pictures\Screenshots\Screenshot 2024-08-19 210529.png" alt="Photo 8">
+    </section>
+
+  </div>
 
 </body>
-
-
 </html>
